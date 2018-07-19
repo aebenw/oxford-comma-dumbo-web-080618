@@ -2,7 +2,7 @@ def oxford_comma(array)
   str = ""
   if array.length == 2 
     return array.join("and")
-  else if array.length > 2 
+  elsif array.length > 2 
     array.each_with_index do |fruit, i|
       if i == array[-1]
         str << ", and #{fruit}"
@@ -11,4 +11,4 @@ def oxford_comma(array)
       end
     end
     return str 
-    end
+end
