@@ -7,7 +7,7 @@ def oxford_comma(array)
   end
   
     array.each_with_index do |fruit, i|
-      if i == array[-1]
+      if i == array.last
         str << ", and #{fruit}"
       else 
         str << "#{fruit}, "
